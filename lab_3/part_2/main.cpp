@@ -8,12 +8,13 @@
 // Student      : Emelyanova M.A.
 //-----------------------------------------------------------------------
 //
-// ПРОВЕРКА ПОДКЛЮЧЕНИЯ БИБЛИОТЕКИ (НУЖНО В ПРОЕКТ ВСТАВИТЬ ПУТЬ, ДЛЯ ЭТОГО:
+// ЧТОБЫ ОСУЩЕСТВИТЬ ПРОВЕРКУ ПОДКЛЮЧЕНИЯ БИБЛИОТЕКИ, 
+// НУЖНО В ПРОЕКТ ВСТАВИТЬ ПУТЬ, ДЛЯ ЭТОГО:
 // 1. КЛИКНУТЬ В ПОЛЕ ПРОЕКТА
 // 2. ПЕРЕЙТИ В "СВОЙСТВА"
 // 3. ВЫБРАТЬ КАТАЛОГИ VS
 // 4. ВСТАВИТЬ ПУТЬ БИБЛИОТЕКИ C:\Program Files\boost_1_84_0;C:\Program Files\fftw-3.3.5-dll64; В ПОЛЯ 
-// - "Каталоги включения" и "Каталоги библиотек")
+// - "Каталоги включения" и "Каталоги библиотек"
 // 5. Перейти в cd PS C:\Program Files\fftw-3.3.5-dll64>
 // 6. Ввести в PowerShell: lib /machine:x64 /def:libfftw3-3.def
 // p.s. "x64" - номер системы
@@ -51,7 +52,6 @@
 #include <boost/numeric/ublas/io.hpp>
 #include <fftw3.h>
 
-#include "Sample.h"
 #include "SampleComplex.h"
 #include "SampleMatrix.h"
 
@@ -110,7 +110,7 @@ int main() {
 	// 
 	// ------------- НАЧАЛО проверок для класса SampleMatrix -------------
 
-	//Создаем объект SampleMatrix и преобразуем его в единичную матрицу
+	// Создаем объект SampleMatrix и преобразуем его в единичную матрицу
 	SampleMatrix matr_1(2);
 	matr_1.CreateIdentityMatrix();
 
@@ -268,10 +268,10 @@ int main() {
 	// Преобразование Фурье
 	// Создаем объект SampleComplex и заполняем его единичными значениями
 	SampleComplex sample(64);
-	//int value = 0; - для заполнения числами расскомментировать
+	//int value = 0; // для заполнения числами - расскомментировать
 	for (int i = 0; i < sample.GetSize(); ++i) {
 		for (int j = 0; j < sample.GetSize(); ++j) {
-			sample(i, j) = std::complex<double>(1.0, 0.0); // а тут 1.0 поменять на value++
+			sample(i, j) = std::complex<double>(1.0, 0.0); // а тут - 1.0 поменять на value++
 		}
 	}
 	//sample.PrintMatrix();
