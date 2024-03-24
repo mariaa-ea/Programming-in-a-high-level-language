@@ -314,8 +314,8 @@ int main() {
 		throw std::runtime_error("Unable to open file for writing Inverse Fourier result.");
 	}
 
-	for (int i = 0; i < sample.GetSizeX(); ++i) {
-		for (int j = 0; j < sample.GetSizeY(); ++j) {
+	for (int i = 0; i < sample.GetSize(); ++i) {
+		for (int j = 0; j < sample.GetSize(); ++j) {
 			file_back << std::real(sample(i, j)) / static_cast<double>(sample.GetSize() * sample.GetSize()) << " "
 				<< std::imag(sample(i, j)) / static_cast<double>(sample.GetSize() * sample.GetSize()) << std::endl;
 		}
