@@ -31,11 +31,11 @@ public:
 	void PrintMatrix() const;
 
 	// Возвращает размер выборки (для квадратной)
-	int GetSize() const;
+	inline int GetSize() const;
 	// Возвращает размер выборки по X
-	int GetSizeX() const;
+	inline int GetSizeX() const;
 	// Возвращает размер выборки по Y
-	int GetSizeY() const;
+	inline int GetSizeY() const;
 
 	// Оператор получения значения элемента с номером i,j
 	PAR& operator()(int i, int j);
@@ -43,9 +43,9 @@ public:
 	const PAR& operator()(int i, int j) const;
 
 	// Осуществляет проверку: квадратная ли выборка
-	bool IsSquare() const;
+	inline bool IsSquare() const;
 	// Осуществляет проверку: размер != 0
-	bool IsZeroSize() const;
+	inline bool IsZeroSize() const;
 	// Осуществляет проверку равенства размеров с другой выборкой
 	bool IsEqualSize(const Sample<PAR>& temp) const;
 
@@ -132,9 +132,6 @@ int Sample<PAR>::GetSizeY() const {
 
 template <class PAR>
 PAR& Sample<PAR>::operator()(int i, int j) {
-	if (i < 0 || i >= m_size_x || j < 0 || j >= m_size_y) {
-		throw std::out_of_range("Index out of range");
-	}
 	return m_data[i * m_size_y + j];
 }
 
