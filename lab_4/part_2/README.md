@@ -14,9 +14,11 @@
 ## Структура проекта:
 
 - `CMakeLists.txt` - файл для настройки проекта с помощью CMake.
-- `calc_psf.cpp` и `calc_psf.h` - класс `CalcPSF` для вычислений ФРТ.
 - `sample.h` - базовый/родительский класс `Sample` для задаваемых выборок.
 - `sample_complex.cpp` и `sample_complex.h` - дочерний класс `Sample` - `SampleComplex` - для выборок с комплексными значениями.
+- `calc_psf.cpp` и `calc_psf.h` - класс `CalcPSF` для вычислений ФРТ.
+- `dqt_psf.ui` и `dqt_psf.h` - файлы пользовательского интерфейса.
+- `qcustomplot.cpp` и `qcustomplot.h` - файлы для использования библиотеки QCustomPlot для отображения графиков.
 
 
 ## Примечания:
