@@ -10,9 +10,9 @@
 
 2. _Лабораторная работа №2_: **[Массивы и контейнеры: STL](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_2)**.
 
-3. _Лабораторная работа №3_: **[Классы (часть 1)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_3/part_1)**; **[Наследование, библиотеки (часть 2)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/working/lab_3/part_2)**.
+3. _Лабораторная работа №3_: **[Классы (часть 1)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_3/part_1)**; **[Наследование, библиотеки (часть 2)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_3/part_2)**.
 
-4. _Лабораторная работа №4_: **[QT (часть 1)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_4/part_1)**; **[QT: Итоговое приложение (часть 2)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/main/working/lab_4/part_2)**.
+4. _Лабораторная работа №4_: **[QT (часть 1)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_4/part_1)**; **[QT: Итоговое приложение (часть 2)](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_4/part_2)**.
 
 5. _Лабораторная работа №5_: **[Профилирование](https://github.com/mariaa-ea/Programming-in-a-high-level-language/tree/main/lab_5)**.
 
@@ -23,7 +23,7 @@
 В ходе выполнения лабораторных работ было создано приложение **_TonePSF Plotter_**.  
 Ниже представлена гифка, демонстрирующая работу приложения:
 
-![TonePSF Plotter](TonePSF Plotter.gif)
+<img src="https://github.com/mariaa-ea/Programming-in-a-high-level-language/blob/main/TonePSF%20Plotter.gif" width="700">
 
 <br />
 

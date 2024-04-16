@@ -18,9 +18,9 @@
 
 ## Дополнительные параметры:
 
-- Дополнительные параметры для вычислений см. на [скриншоте](lab_4/part_1/screen.jpg) ниже.
+- Дополнительные параметры для вычислений см. на [скриншоте](screen.jpg) ниже.
 
-![](lab_4/part_1/screen.jpg)
+<img src="https://github.com/mariaa-ea/Programming-in-a-high-level-language/blob/main/lab_4/part_1/screen.jpg" width="500">
 
 
 ## Примечания:
