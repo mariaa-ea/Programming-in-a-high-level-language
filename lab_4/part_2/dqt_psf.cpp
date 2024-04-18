@@ -88,19 +88,19 @@ void DQtPSF::OnRedrawClicked()
 		if (m_ui.m_rb_mkm->isChecked()) {
 			// Если выбрана опция "m_rb_mkm"
 			step = m_ui.m_le_step_im->text().toDouble();
-			DrawGraph(m_PSF, m_ui.m_qW_Graph, step, "x, мкм", "ФРТ (PSF)");
+			DrawGraph(m_PSF, m_ui.m_qW_Graph, step, "x, мкм", "Intensity (x)");
 			DrawGrayscale(m_PSF, m_ui.m_qW_Grayscale, step, "x, мкм", "y, мкм");
 		}
 		else if (m_ui.m_rb_pixels->isChecked()) {
 			// Если выбрана опция "m_rb_pixels"
-			DrawGraph(m_PSF, m_ui.m_qW_Graph, 1, "x, пкс", "ФРТ (PSF)");
+			DrawGraph(m_PSF, m_ui.m_qW_Graph, 1, "x, пкс", "Intensity (x)");
 			DrawGrayscale(m_PSF, m_ui.m_qW_Grayscale, 1, "x, пкс", "y, пкс");
 		}
 		else {
 			// Если выбрана опция "m_rb_canon" или не выбрано ничего
 			m_ui.m_rb_canon->setChecked(true);
 			step = m_ui.m_le_step_im_can->text().toDouble();
-			DrawGraph(m_PSF, m_ui.m_qW_Graph, step, "x, к. ед.", "ФРТ (PSF)");
+			DrawGraph(m_PSF, m_ui.m_qW_Graph, step, "x, к. ед.", "Intensity (x)");
 			DrawGrayscale(m_PSF, m_ui.m_qW_Grayscale, step, "x, к. ед.", "y, к. ед.");
 		};
 	};
